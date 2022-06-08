@@ -2,7 +2,7 @@
 A collection of useful subs and functions for Excel VBA
 
 ## Log
-Push text logs to the VBA Editor's Immediate Window with an option to clear the previous entries. Useful for debugging purposes.
+* Push text logs to the VBA Editor's Immediate Window with an option to clear the previous entries. Useful for debugging purposes.
 * Usage Example:
 ```vba
 Log vbNullString, True 'This line will clear the Immediate Window. vbNullString represents an empty string and should be used instead of "" for performance reasons
@@ -29,4 +29,8 @@ OptimizeVBA False
 ```
 
 ## CountFilesInFolder
-todo...
+* This function will count all files of type (`sType`) from the specified folder (`sDIR`)
+* Usage Example:
+```vba
+Dim iFileCount As Single: iFileCount = CountFilesInFolder("C:\Test\", "*xl??")
+```
