@@ -6,7 +6,8 @@ Push text logs to the VBA Editor's Immediate Window with an option to clear the 
 wip...
 
 ## OptimizeVBA
-todo...
+This subroutine allows you to enable an optimized VBA calculation mode with a single call before executing your VBA code and disabling it all with one call after that
+
 
 ## CountFilesInFolder
 todo...
