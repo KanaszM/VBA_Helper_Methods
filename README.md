@@ -33,4 +33,5 @@ OptimizeVBA False
 * Usage Example:
 ```vba
 Dim iFileCount As Single: iFileCount = CountFilesInFolder("C:\Test\", "*xl??")
+' Count the number of files with extensions that start with "xl" and store that value inside the iFileCount variable
 ```
