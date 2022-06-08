@@ -14,16 +14,20 @@ Public Sub OptimizeVBA(bMode As Boolean)
         If bMode Then
             .Calculation = xlCalculationManual
             .ScreenUpdating = False
+            .EnableEvents = False
             .EnableAnimations = False
             .DisplayAlerts = False
+            .PrintCommunication = False
             For Each oWS In ActiveWorkbook.Worksheets
                 oWS.DisplayPageBreaks = False
             Next oWS
         Else
             .Calculation = xlCalculationAutomatic
             .ScreenUpdating = True
+            .EnableEvents = True
             .EnableAnimations = True
             .DisplayAlerts = True
+      .PrintCommunication = True
         End If
     End With
 End Sub
