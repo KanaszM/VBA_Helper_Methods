@@ -2,8 +2,12 @@
 A collection of useful subs and functions for Excel VBA
 
 ## Log
-Push text logs to the VBA Editor's Immediate Window with an option to clear the previous entries
-wip...
+Push text logs to the VBA Editor's Immediate Window with an option to clear the previous entries. Useful for debugging purposes.
+* Usage Example:
+```vba
+Log vbNullString, True 'This line will clear the Immediate Window. vbNullString represents an empty string and should be used instead of "" for performance reasons
+Log "Hello VBA!"
+```
 
 ## OptimizeVBA
 * This subroutine allows you to enable an optimized VBA calculation mode with a single call before executing your VBA code and disabling it all with one call after that
@@ -19,9 +23,9 @@ wip...
 
 * Usage Example:
 ```vba
-OptimizedMode True
+OptimizeVBA True
 < ... your code here ... >
-OptimizedMode False
+OptimizeVBA False
 ```
 
 ## CountFilesInFolder
