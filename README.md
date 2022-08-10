@@ -11,7 +11,7 @@ Log "Hello VBA!"
 
 ## OptimizeVBA
 * This subroutine allows you to enable an optimized VBA calculation mode with a single call before executing your VBA code and disabling it all with one call after that
-* It will also disable the page breaks on all sheets. By default, this behaviour is set as an optional argument with the value False:
+* It will also disable the page breaks on all sheets. By default, this behaviour is set as an optional argument `bDisplayPageBreaks` with the value False:
 * An explanation on why the page breaks should be disabled:
 
 > "One bad thing about page breaks when you have VBA code running is they want to recalculate the "breaks" whenever a change is made to the spreadsheet.  You could image the time consumption that might take place if you are running VBA code that is deleting or adding thousands of rows to a spreadsheet.  Because Page Breaks need to constantly recalculate, it is good to play it safe and shut them off while your code is being executed" Chris Newman :: TheSpreadsheetGuru
